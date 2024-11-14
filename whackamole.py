@@ -8,7 +8,7 @@ screen_width = 640
 screen_height = 512
 
 def draw_grid(screen):
-    for i in range(0, 640, grid_square):
+    for i in range(0, screen_width, grid_square):
         pygame.draw.line(screen, (100, 0, 0), (i,0), (i, screen_width))
     for j in range(0, screen_height, grid_square):
         pygame.draw.line(screen, (100, 0, 0), (0,j), (screen_width, j))
